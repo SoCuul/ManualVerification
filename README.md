@@ -4,7 +4,7 @@ This bot is easy to setup, works great on sites like repl.it and is updated freq
 
 # Setup
 ## Prerequisites
-First install (node.js)[https://nodejs.org/en/download/] or create a new node.js project on repl.it[https://repl.it/]
+First install [node.js](https://nodejs.org/en/download/) or create a new node.js project on [repl.it](https://repl.it/)
 Before configuring the bot, you must install the npm packages.
 
 * dotenv
@@ -42,4 +42,4 @@ Here's how to configure it (Please replace the tutorial values with your own):
 ```
 
 # Support
-If you need help with this bot, join my (support server)[https://discord.gg/AY7WHt4Nrw].
+If you need help with this bot, join my [support server](https://discord.gg/AY7WHt4Nrw).
