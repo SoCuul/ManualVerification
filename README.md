@@ -13,8 +13,7 @@ Before configuring the bot, you must install the npm packages.
 
 ## Configuration
 ### Step 1 (.env)
-You must first create a file named .env
-Put this inside it:
+You must first create a file named `.env` with the following contents:
 ```
 TOKEN=Replace this with your bot token
 webhookID=Replace this with your webhook ID
