@@ -1,0 +1,17 @@
+{
+    "prefix": "",
+    "verificationFooter": "",
+    
+    "botName": "",
+    "guildID": "",
+    "staffRoleName": "",
+    "verifiedRoleName": "",
+    "verifiedPrefix": "",
+
+    "statusType": "",
+    "statusActivity": "",
+
+    "verificationEmbedColor": "",
+    "acceptedVerificationEmbedColor": "",
+    "declinedVerificationEmbedColor": ""
+}
