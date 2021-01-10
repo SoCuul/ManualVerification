@@ -6,7 +6,8 @@ module.exports = {
 			const embed = new Discord.MessageEmbed()
 			.setTitle(client.config.botName)
 			.setColor('BLUE')
-			.setDescription(`✅ Accept ${tick}!accept userid${tick}\n❌ Decline ${tick}!decline userid reason${tick}`)
+			.setDescription(`✅ Accept ${tick}!accept <userid> [reason]${tick}\n❌ Decline ${tick}!decline <userid> [reason]${tick}`)
+			.setFooter('<required> [optional]', '')
 			.setTimestamp()
 			message.channel.send(embed)
 	}else{

@@ -20,7 +20,7 @@ webhookID=Replace this with your webhook ID
 webhookToken=Replace this with your webhook token
 ```
 ### Step 2 (config.json)
-The main way to configure the bot is the config.json file
+You must first create a file named `config.json`. This is the main way to configure the bot.
 Here's how to configure it (Please replace the tutorial values with your own):
 ```json
 {

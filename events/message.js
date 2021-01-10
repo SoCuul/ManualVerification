@@ -10,7 +10,7 @@ module.exports = (client, message) => {
   if (!cmdPrefixes) return;
 
   // Our standard argument/command name definition.
-  const args = message.content.slice(1).trim().split(/ +/g);
+  const args = message.content.slice(client.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
 
   // Grab the command data from the client.commands Enmap
