@@ -23,7 +23,6 @@ module.exports = {
 						.setColor(client.config.acceptedVerificationEmbedColor)
 						.setTitle(client.config.botName)
 						.setDescription(`You have been verified!\nYou can now fully access the server`)
-						.setFooter(message.guild.name, '');
 						if(notes){
 							embed.addField('Notes', notes)
 						}

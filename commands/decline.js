@@ -18,7 +18,6 @@ module.exports = {
 				.setColor(declinedVerificationEmbedColor)
 				.setDescription(`Your verification has been declined.`)
 				.addField('Reason', reason)
-				.setFooter(message.guild.name, '');
 				member.send(embed).catch(error => { message.channel.send(`❌ There was an error dming <@${args[0]}`) })
 
 				member.kick('Verification Declined')
