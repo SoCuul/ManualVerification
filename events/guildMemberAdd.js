@@ -8,10 +8,10 @@ module.exports = (client, member) => {
 			}).then(function(response) {
   				if (response.status = 'ok') {
 					const embed = new Discord.MessageEmbed()
+					.setColor(client.config.verificationEmbedColor)
 					.setTitle(client.config.botName)
 					.setDescription(`The staff team has been notified and are verifying your account.\nRoblox Account: [**${response.data.robloxUsername}**](https://www.roblox.com/users/${response.data.robloxId}/profile)\nIf this is not the account you want to verify as, [reverify](https://verify.eryn.io/) and then rejoin the discord server.`)
 					.setThumbnail(`http://www.roblox.com/Thumbs/Avatar.ashx?x=600&y=600&Format=Png&username=${response.data.robloxUsername}`)
-					.setColor(client.config.verificationEmbedColor)
 					member.send(embed).catch(error => { message.channel.send(`❌ There was an error dming the user about the verification status.`) })
 
 					const VerHook = new Discord.WebhookClient(process.env.webhookID, process.env.webhookToken);
