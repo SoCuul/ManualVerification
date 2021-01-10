@@ -16,8 +16,8 @@ module.exports = (client, member) => {
 
 					const VerHook = new Discord.WebhookClient(process.env.webhookID, process.env.webhookToken);
 					const verembed = new Discord.MessageEmbed()
-					.setTitle(client.config.botName)
 					.setColor(client.config.verificationEmbedColor)
+					.setTitle(client.config.botName)
 					.setThumbnail(`http://www.roblox.com/Thumbs/Avatar.ashx?x=600&y=600&Format=Png&username=${response.data.robloxUsername}`)
 					.addFields(
 		  				{ name: 'Discord Account', value: `${member.user.tag} (${member})` },
@@ -27,9 +27,9 @@ module.exports = (client, member) => {
   				}
 			}).catch(function(error) {
 				const embed = new Discord.MessageEmbed()
+				.setColor(client.config.verificationEmbedColor)
 				.setTitle(client.config.botName)
 				.setDescription(`We couldn't detect a roblox account linked to this discord account.\nIf you haven't yet, [verify here](https://verify.eryn.io/) and then rejoin the discord server. If you have verified before, please try rejoining the server.`)
-				.setColor(client.config.verificationEmbedColor)
 				member.send(embed).catch(error => { message.channel.send(`❌ There was an error dming the user about the verification status.`) })
 			})
 		}
