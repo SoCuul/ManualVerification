@@ -2,13 +2,16 @@
 If you run a server and want a customizable manual verification bot, look no further!
 This bot is easy to setup, works great on sites like repl.it and is updated frequently.
 
+# How to download
+You should always use the latest version of the bot. You can get the download the latest source code by [clicking this link](https://github.com/SoCuul/ManualVerification/releases/latest).
+
 # Setup
 ## Prerequisites
 First install [node.js](https://nodejs.org/en/download/) or create a new node.js project on [repl.it](https://repl.it/)
-Before configuring the bot, you must install the npm packages.
+Before configuring the bot, you must install the npm packages. Download them manually, or run `npm install`.
 
-* dotenv
 * discord.js
+* dotenv
 * axios
 
 ## Configuration
@@ -39,6 +42,9 @@ Here's how to configure it (Please replace the tutorial values with your own):
     "declinedVerificationEmbedColor": "Please enter the color to be shown on the declined verification embeds (HEX or HTML colors only)"
 }
 ```
+
+## Running the bot
+Run start.bat or start.sh (depending what platform you're on) and the bot should start up! (Note for using the start.sh script, before running it, do `chmod +x start.sh` and then run it with `./start.sh`)
 
 # Support
 If you need help with this bot, join my [support server](https://discord.gg/AY7WHt4Nrw).

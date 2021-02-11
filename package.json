@@ -1,0 +1,24 @@
+{
+  "name": "manualverification",
+  "version": "1.0.0",
+  "description": "If you run a server and want a customizable manual verification bot, look no further!\r This bot is easy to setup, works great on sites like repl.it and is updated frequently.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoCuul/ManualVerification.git"
+  },
+  "keywords": [
+    "roblox",
+    "verification",
+    "verification-bot"
+  ],
+  "author": "SoCuul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SoCuul/ManualVerification/issues"
+  },
+  "homepage": "https://github.com/SoCuul/ManualVerification#readme"
+}
