@@ -46,5 +46,10 @@ Here's how to configure it (Please replace the tutorial values with your own):
 ## Running the bot
 Run start.bat or start.sh (depending what platform you're on) and the bot should start up! (Note for using the start.sh script, before running it, do `chmod +x start.sh` and then run it with `./start.sh`)
 
+# Commands
+* `help` Shows the command list.
+* `accept <message id> [notes]` Accepts a user (Optional notes).
+* `decline <message id> [reason]` Declines a user (Optional reason).
+
 # Support
 If you need help with this bot, join my [support server](https://discord.gg/AY7WHt4Nrw).
