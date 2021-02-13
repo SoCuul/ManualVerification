@@ -4,6 +4,7 @@
   "description": "If you run a server and want a customizable manual verification bot, look no further!\r This bot is easy to setup, works great on sites like repl.it and is updated frequently.",
   "main": "index.js",
   "scripts": {
+    "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
