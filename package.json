@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/SoCuul/ManualVerification/issues"
   },
-  "homepage": "https://github.com/SoCuul/ManualVerification#readme"
+  "homepage": "https://github.com/SoCuul/ManualVerification#readme",
+  "dependencies": {
+    "discord.js": "^12.5.2"
+  }
 }
