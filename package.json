@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/SoCuul/ManualVerification#readme",
   "dependencies": {
-    "discord.js": "^12.5.2"
+    "axios": "^0.21.1",
+    "discord.js": "^12.5.3"
   }
 }
