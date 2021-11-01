@@ -51,7 +51,7 @@ Click [this link](https://repl.it/github/socuul/manualverification) to create a 
 
 ### Step 3: Webserver
 The webserver allows the bot to stay online 24/7.
-First, create a file called `modules.js`. In this file, put `require('http').createServer((req, res) => res.end('ManualVerification Webserver')).listen(3000)`.
+First, create a file called `modules.js`. In this file, put `module.exports = () => require('http').createServer((req, res) => res.end('ManualVerification Webserver')).listen(3000)`.
 
 ### Step 4: Pinging the webserver
 Follow this guide to learn how to ping your webserver to keep your bot online 24/7.
