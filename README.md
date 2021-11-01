@@ -47,7 +47,7 @@ Hosting with repl.it is an alternative method to host ManualVerification.
 Click [this link](https://repl.it/github/socuul/manualverification) to create a new ManualVerification repl.it project.
 
 ### Step 2: Configuration
-**sample.env** - Go to the sidebar and click **Secrets**. Create a new secret with a key of `TOKEN` and a value of your Discord bot token.
+**ENV** - Go to the sidebar and click **Secrets**. Create a new secret with a key of `TOKEN` and a value of your Discord bot token.
 
 **sample-config.json** - Rename file to `config.json` and customize the configuration settings to your liking. Note: A colour string must be a valid HEX/Discord.JS colour.
 
