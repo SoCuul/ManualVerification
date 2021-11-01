@@ -44,7 +44,7 @@ Run `node .` or one of the start scripts to run this bot. You can also use a pro
 Hosting with repl.it is an alternative method to host ManualVerification.
 
 ### Step 1: Cloning the repo
-Click [this link](https://repl.it/github/socuul/manualverification) to create a new ManualVerification repl.it project.
+Click [this link](https://repl.it/github/socuul/manualverification) to create a new ManualVerification replit project.
 
 ### Step 2: Configuration
 **ENV** - Go to the sidebar and click **Secrets**. Create a new secret with a key of `TOKEN` and a value of your Discord bot token.
