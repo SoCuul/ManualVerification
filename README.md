@@ -15,6 +15,15 @@ You can view the user's linked account and other information and choose if you w
 * Configuration error-checking
 
 
+## Download
+
+### Stable
+Navigate to the [ManualVerification Releases](https://github.com/SoCuul/ManualVerification/releases/) and download the source code from the latest non pre-release version.
+
+### Development
+Navigate to the [ManualVerification Releases](https://github.com/SoCuul/ManualVerification/releases/) and select the newest (possibly pre-release) version.
+
+
 ## Main Setup
 
 ### Prerequisites
