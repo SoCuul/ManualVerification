@@ -1,7 +1,7 @@
 {
   "name": "manualverification",
-  "version": "1.0.2",
-  "description": "If you run a server and want a customizable manual verification bot, look no further!\r This bot is easy to setup, works great on sites like repl.it and is updated frequently.",
+  "version": "2.0.0",
+  "description": "A self-hosted manual Roblox verification bot for Discord.",
   "main": "index.js",
   "scripts": {
     "start": "node .",
@@ -13,8 +13,7 @@
   },
   "keywords": [
     "roblox",
-    "verification",
-    "verification-bot"
+    "verification"
   ],
   "author": "SoCuul",
   "license": "ISC",
@@ -23,7 +22,8 @@
   },
   "homepage": "https://github.com/SoCuul/ManualVerification#readme",
   "dependencies": {
-    "axios": "^0.21.1",
-    "discord.js": "^12.5.3"
+    "discord.js": "^13.3.0",
+    "dotenv": "^10.0.0",
+    "rblxverify": "^1.1.3"
   }
 }

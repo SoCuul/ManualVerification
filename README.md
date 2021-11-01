@@ -1,55 +1,61 @@
-# Roblox Manual Verification Bot
-If you run a server and want a customizable manual verification bot, look no further!
-This bot is easy to setup, works great on sites like repl.it and is updated frequently.
+# ManualVerification
 
-# How to download
-You should always use the latest version of the bot. You can get the download the latest source code by [clicking this link](https://github.com/SoCuul/ManualVerification/releases/latest).
 
-# Setup
-## Prerequisites
-First install [node.js](https://nodejs.org/en/download/) or create a new node.js project on [repl.it](https://repl.it/)
-Before configuring the bot, you must install the npm packages. Download them manually, or run `npm install`.
+## About
+ManualVerification is a customizable self-hosted bot that provides a gateway for your Roblox based Discord server.
+You can view the user's linked account and other information and choose if you want to accept/decline the verification request.
 
-* discord.js
-* dotenv
-* axios
 
-## Configuration
-### Step 1 (.env)
-You must first create a file named `.env` with the following contents:
-```
-TOKEN=Replace this with your bot token
-webhookID=Replace this with your webhook ID
-webhookToken=Replace this with your webhook token
-```
-### Step 2 (config.json)
-You must first create a file named `config.json`. This is the main way to configure the bot.
-Here's how to configure it (Please replace the tutorial values with your own):
-```json
-{
-    "prefix": "Enter the prefix that will be used for the commands",
-    "botName": "Please enter the name of the bot (this will be shown in the verification embeds)",
-    "guildID": "Please enter the ID of the guild that the bot will be used in",
-    "staffRoleName": "Please enter the name of the role that will be able to use the commands",
-    "verifiedRoleName": "Please enter the name of the role that the bot will give you when you are verified",
-    "verifiedPrefix": "Please enter the prefix of the nickname to be asigned when the person is verified (Prefix | Roblox Name)",
+## Features
+* Utilizes Discord interactions (no commands required)
+* Provides detailed user information (including account age)
+* Optional ban option
+* Completely customizable
+* Easy to setup
+* Configuration error-checking
 
-    "statusType": "Please enter either PLAYING, WATCHING or LISTENING in all caps",
-    "statusActivity": "Please enter the message to be shown after the status type",
 
-    "verificationEmbedColor": "Please enter the color to be shown on the awaiting verification embeds (HEX or HTML colors only)",
-    "acceptedVerificationEmbedColor": "Please enter the color to be shown on the accepted verification embeds (HEX or HTML colors only)",
-    "declinedVerificationEmbedColor": "Please enter the color to be shown on the declined verification embeds (HEX or HTML colors only)"
-}
-```
+## Main Setup
 
-## Running the bot
-Run start.bat or start.sh (depending what platform you're on) and the bot should start up! (Note for using the start.sh script, before running it, do `chmod +x start.sh` and then run it with `./start.sh`)
+### Prerequisites
+You will need to have the latest LTS version of [node.js](https://nodejs.org/en/download/). After node.js is installed, run `npm install` in the project folder.
 
-# Commands
-* `help` Shows the command list.
-* `accept <message id> [notes]` Accepts a user (Optional notes).
-* `decline <message id> [reason]` Declines a user (Optional reason).
+### Configuration
+**sample.env** - Rename file to `.env` and paste in a Discord bot token next to **TOKEN=**.
+**sample-config.json** - Rename file to `config.json` and customize the configuration settings to your liking. Note: A colour string must be a valid HEX/Discord.JS colour.
 
-# Support
-If you need help with this bot, join my [support server](https://discord.gg/AY7WHt4Nrw).
+### Startup
+Run `node .` or one of the start scripts to run this bot. You can also use a process manager like [pm2](https://pm2.keymetrics.io/) to manage the bot.
+
+
+## Replit Setup
+
+### Info
+Hosting with repl.it is an alternative method to host ManualVerification.
+
+### Step 1: Cloning the repo
+Click [this link](https://repl.it/github/socuul/manualverification) to create a new ManualVerification repl.it project.
+
+### Step 2: Configuration
+**sample.env** - Go to the sidebar and click **Secrets**. Create a new secret with a key of `TOKEN` and a value of your Discord bot token.
+**sample-config.json** - Rename file to `config.json` and customize the configuration settings to your liking. Note: A colour string must be a valid HEX/Discord.JS colour.
+
+### Step 3: Webserver
+The webserver allows the bot to stay online 24/7.
+First, create a file called `modules.js`. In this file, put `require('http').createServer((req, res) => res.end('ManualVerification Webserver')).listen(3000)`.
+
+### Step 4: Pinging the webserver
+Follow this guide to learn how to ping your webserver to keep your bot online 24/7.
+Guide: https://replit.com/talk/learn/How-to-use-and-setup-UptimeRobot/9003
+
+### Step 5: Startup
+You can now click the **Run** button to start up your bot. If the UptimeRobot pinging has been set-up successfully, your bot should be online 24/7.
+
+
+## Contributing
+Contributions to this project are gladly appreciated. 
+If you would like to add something to ManualVerification, create a pull request.
+
+
+## Support
+If you need any help with this bot, you can join my [discord server](https://discord.com/invite/AY7WHt4Nrw).

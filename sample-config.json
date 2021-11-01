@@ -1,0 +1,36 @@
+{
+    "presence": {
+        "activities": [
+            {
+                "name": "with verification",
+                "type": "PLAYING"
+            }
+        ],
+        "switchActivityInterval": 30000,
+
+        "status": "online"
+    },
+
+    "info": {
+        "guildID": "",
+        "channelID": "",
+        "includeBanButton": true/false
+    },
+
+    "verified": {
+        "notifyUser": true/false,
+        "setNickname": true/false,
+        "setRole": true/false,
+
+        "roleID": "",
+        "nicknamePrefix": ""
+    },
+
+    "colours": {
+        "verificationEmbed": "",
+        "invalidVerificationEmbed": "",
+        "acceptedEmbed": "",
+        "declinedEmbed": "",
+        "banEmbed": ""
+    }
+}
