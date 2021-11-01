@@ -31,6 +31,7 @@ You will need to have the latest LTS version of [node.js](https://nodejs.org/en/
 
 ### Configuration
 **sample.env** - Rename file to `.env` and paste in a Discord bot token next to **TOKEN=**.
+
 **sample-config.json** - Rename file to `config.json` and customize the configuration settings to your liking. Note: A colour string must be a valid HEX/Discord.JS colour.
 
 ### Startup
