@@ -41,7 +41,7 @@ Run `node .` or one of the start scripts to run this bot. You can also use a pro
 ## Replit Setup
 
 ### Info
-Hosting with repl.it is an alternative method to host ManualVerification.
+Hosting with replit is an alternative method to host ManualVerification.
 
 ### Step 1: Cloning the repo
 Click [this link](https://repl.it/github/socuul/manualverification) to create a new ManualVerification replit project.
@@ -59,7 +59,10 @@ First, create a file called `modules.js`. In this file, put `module.exports = ()
 Follow this guide to learn how to ping your webserver to keep your bot online 24/7.
 Guide: https://replit.com/talk/learn/How-to-use-and-setup-UptimeRobot/9003
 
-### Step 5: Startup
+### Step 5: Installing dependencies
+Run the following command in the shell section of your terminal before starting your bot for the first time to install the required backend software: `npm i --save-dev node@16`
+
+### Step 6: Startup
 You can now click the **Run** button to start up your bot. If the UptimeRobot pinging has been set-up successfully, your bot should be online 24/7.
 
 
