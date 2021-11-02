@@ -24,6 +24,10 @@ Navigate to the [ManualVerification Releases](https://github.com/SoCuul/ManualVe
 Navigate to the [ManualVerification Releases](https://github.com/SoCuul/ManualVerification/releases/) and select the newest (possibly pre-release) version.
 
 
+## Pre-Setup
+Make sure you have a bot application created on the [Discord Developer Portal](https://discord.com/developers/applications) and that the bot has the **Server Members Intent**.
+
+
 ## Main Setup
 
 ### Prerequisites
