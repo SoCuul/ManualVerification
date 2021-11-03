@@ -1,3 +1,2 @@
 run="npm config set prefix=$(pwd)/node_modules/node && export PATH=$(pwd)/node_modules/node/bin:$PATH && clear && node index.js"
 language="nodejs"
-onBoot="npm init -y && npm i --save-dev node@16"
