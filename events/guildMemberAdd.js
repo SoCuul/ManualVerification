@@ -36,7 +36,7 @@ module.exports = async (client, member) => {
         verifyInfo = await rblxverify.rover(member.id)
     }
     catch (error) {
-        console.log(`[Verify Error] There was an error verifying user: ${member.id}`)
+        return console.log(`[Verify Error] There was an error verifying user: ${member.id}`)
     }
 
     //Check for valid verification
