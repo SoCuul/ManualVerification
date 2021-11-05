@@ -21,7 +21,7 @@ You can view the user's linked account and other information and choose if you w
 Navigate to the [ManualVerification Releases](https://github.com/SoCuul/ManualVerification/releases/) and download the source code from the latest non pre-release version.
 
 ### Development
-Navigate to the [ManualVerification Releases](https://github.com/SoCuul/ManualVerification/releases/) and select the newest (possibly pre-release) version.
+If you would like to test out the newest (possibly not stable) version of the bot, you can download the development version [here](https://github.com/SoCuul/ManualVerification/archive/refs/heads/main.zip).
 
 
 ## Pre-Setup

@@ -47,12 +47,20 @@ module.exports = async (client, member) => {
         .setDescription(`There was an error retrieving your verification information.\n\nPlease make sure you are verified at https://rover.link/login/\nIf you have already verified, try rejoining this discord server in a few minutes.`)
         .setFooter(member.guild.name, member.guild.iconURL({ dynamic: true }))
         .setTimestamp()
-        
+
         //Notify user
         try {
-            return await member.send({
+            await member.send({
                 embeds: [ embed ]
             })
+        }
+        catch (error) {
+            return
+        }
+
+        //Kick user
+        try {
+            return await member.kick('User is not verified with RoVer')
         }
         catch (error) {
             return
@@ -68,9 +76,17 @@ module.exports = async (client, member) => {
         
         //Notify user
         try {
-            return await member.send({
+            await member.send({
                 embeds: [ embed ]
             })
+        }
+        catch (error) {
+            return
+        }
+
+        //Kick user
+        try {
+            return await member.kick('User is not verified with RoVer')
         }
         catch (error) {
             return

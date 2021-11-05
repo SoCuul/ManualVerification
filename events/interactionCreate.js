@@ -76,7 +76,12 @@ module.exports = async (client, i) => {
                 //Give role
                 if (client.config.verified.setRole) {
                     if (i.guild.roles.cache.some(r => r.id === client.config.verified.roleID)) {
-                        await member.roles.add(client.config.verified.roleID, 'Manual Verification Accepted')
+                        try {
+                            await member.roles.add(client.config.verified.roleID, 'Manual Verification Accepted')
+                        }
+                        catch (error) {
+                            errors.push('Could not give role.')
+                        }
                     }
                     else {
                         errors.push('Could not find role in server.')
