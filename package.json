@@ -1,6 +1,6 @@
 {
   "name": "manualverification",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "A self-hosted manual Roblox verification bot for Discord.",
   "main": "index.js",
   "scripts": {
