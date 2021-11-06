@@ -95,6 +95,8 @@ module.exports = async (client, i) => {
                         .setColor(client.config.colours.acceptedEmbed)
                         .setTitle('Verification Accepted')
                         .setDescription('Your verification request has been accepted.')
+                        .setThumbnail(`https://www.roblox.com/Thumbs/Avatar.ashx?x=600&y=600&Format=Png&userid=${robloxID}`)
+                        .addField('Roblox Account', `[**${robloxUsername}**](https://www.roblox.com/users/${robloxID}/profile)`)
                         .setFooter(i.guild.name, i.guild.iconURL({ dynamic: true }))
                         .setTimestamp()
                         await member.send({
@@ -159,6 +161,8 @@ module.exports = async (client, i) => {
                         .setColor(client.config.colours.declinedEmbed)
                         .setTitle('Verification Declined')
                         .setDescription('Your verification request has been declined.\nYou have been removed from the server.')
+                        .setThumbnail(`https://www.roblox.com/Thumbs/Avatar.ashx?x=600&y=600&Format=Png&userid=${robloxID}`)
+                        .addField('Roblox Account', `[**${robloxUsername}**](https://www.roblox.com/users/${robloxID}/profile)`)
                         .setFooter(i.guild.name, i.guild.iconURL({ dynamic: true }))
                         .setTimestamp()
                         await member.send({

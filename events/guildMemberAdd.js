@@ -54,17 +54,15 @@ module.exports = async (client, member) => {
                 embeds: [ embed ]
             })
         }
-        catch (error) {
-            return
-        }
+        catch (error) {}
 
         //Kick user
         try {
-            return await member.kick('User is not verified with RoVer')
+            await member.kick('User is not verified with RoVer')
         }
-        catch (error) {
-            return
-        }
+        catch (error) {}
+
+        return
     }
     if (!verifyInfo.robloxID || !verifyInfo.robloxUsername) {
         const embed = new Discord.MessageEmbed()
@@ -80,17 +78,15 @@ module.exports = async (client, member) => {
                 embeds: [ embed ]
             })
         }
-        catch (error) {
-            return
-        }
+        catch (error) {}
 
         //Kick user
         try {
-            return await member.kick('User is not verified with RoVer')
+            await member.kick('User is not verified with RoVer')
         }
-        catch (error) {
-            return
-        }
+        catch (error) {}
+
+        return
     }
 
     try {
@@ -138,6 +134,7 @@ module.exports = async (client, member) => {
                 .setTitle('Verification Pending')
                 .setDescription('Please wait for a staff member to accept you into the server.')
                 .setThumbnail(`https://www.roblox.com/Thumbs/Avatar.ashx?x=600&y=600&Format=Png&userid=${verifyInfo.robloxID}`)
+                .addField('Roblox Account', `[**${verifyInfo.robloxUsername}**](https://www.roblox.com/users/${verifyInfo.robloxID}/profile)`)
                 .setFooter(member.guild.name, member.guild.iconURL({ dynamic: true }))
                 .setTimestamp()
     
