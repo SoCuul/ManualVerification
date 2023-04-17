@@ -1,3 +1,8 @@
+# Deprecation Notice
+As of April 2023, this project has been discontinued. The underlying verification package has not been updated by me in a very long time and is non-functional in most cases.
+
+---
+
 # ManualVerification
 
 
